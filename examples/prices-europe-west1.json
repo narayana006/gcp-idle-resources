@@ -1,0 +1,9 @@
+{
+  "currency": "USD",
+  "disk_gib_month": {
+    "pd-standard": 0.044,
+    "pd-balanced": 0.11,
+    "pd-ssd": 0.187
+  },
+  "snapshot_gib_month": 0.055
+}

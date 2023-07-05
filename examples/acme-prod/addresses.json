@@ -1,0 +1,104 @@
+[
+  {
+    "kind": "compute#address",
+    "id": "4823001100000079190",
+    "creationTimestamp": "2024-03-01T10:00:00.000-08:00",
+    "name": "web-1-ip",
+    "address": "203.0.113.10",
+    "status": "IN_USE",
+    "region": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/addresses/web-1-ip",
+    "addressType": "EXTERNAL",
+    "networkTier": "PREMIUM",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/web-1"
+    ],
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000087109",
+    "creationTimestamp": "2024-09-12T14:22:09.118-07:00",
+    "name": "old-bastion-ip",
+    "address": "203.0.113.25",
+    "status": "RESERVED",
+    "region": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/addresses/old-bastion-ip",
+    "addressType": "EXTERNAL",
+    "networkTier": "PREMIUM",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000095028",
+    "creationTimestamp": "2024-03-01T10:00:00.000-08:00",
+    "name": "lb-frontend-ip",
+    "address": "198.51.100.10",
+    "status": "IN_USE",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/addresses/lb-frontend-ip",
+    "addressType": "EXTERNAL",
+    "networkTier": "PREMIUM",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/forwardingRules/lb-frontend-https"
+    ],
+    "ipVersion": "IPV4",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000102947",
+    "creationTimestamp": "2024-11-01T09:00:00.000-07:00",
+    "name": "promo-2025-ip",
+    "address": "198.51.100.40",
+    "status": "RESERVED",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/addresses/promo-2025-ip",
+    "addressType": "EXTERNAL",
+    "networkTier": "PREMIUM",
+    "ipVersion": "IPV4",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000110866",
+    "creationTimestamp": "2024-03-01T10:00:00.000-08:00",
+    "name": "batch-worker-ip",
+    "address": "203.0.113.77",
+    "status": "IN_USE",
+    "region": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/addresses/batch-worker-ip",
+    "addressType": "EXTERNAL",
+    "networkTier": "PREMIUM",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/batch-worker-old"
+    ],
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000118785",
+    "creationTimestamp": "2024-06-01T09:00:00.000-07:00",
+    "name": "db-vip",
+    "address": "10.10.0.50",
+    "status": "RESERVED",
+    "region": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/addresses/db-vip",
+    "addressType": "INTERNAL",
+    "purpose": "GCE_ENDPOINT",
+    "subnetwork": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/subnetworks/prod-subnet",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#address",
+    "id": "4823001100000126704",
+    "creationTimestamp": "2023-05-02T09:00:00.000-07:00",
+    "name": "google-managed-services-default",
+    "address": "10.80.0.0",
+    "status": "RESERVED",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/addresses/google-managed-services-default",
+    "addressType": "INTERNAL",
+    "purpose": "VPC_PEERING",
+    "prefixLength": 16,
+    "network": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/networks/default",
+    "labelFingerprint": "42WmSpB8rSM="
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000007919",
+    "creationTimestamp": "2024-01-11T09:12:44.512-08:00",
+    "name": "web-1",
+    "sizeGb": "20",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-balanced",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/web-1",
+    "status": "READY",
+    "sourceImage": "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-12",
+    "sourceImageId": "8471935610238471123",
+    "lastAttachTimestamp": "2024-01-11T09:13:02.101-08:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/web-1"
+    ],
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000015838",
+    "creationTimestamp": "2024-04-02T11:00:05.000-07:00",
+    "name": "old-reports-export",
+    "sizeGb": "500",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-standard",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/old-reports-export",
+    "status": "READY",
+    "lastAttachTimestamp": "2024-04-02T11:01:10.000-07:00",
+    "lastDetachTimestamp": "2025-06-02T16:45:12.338-07:00",
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000023757",
+    "creationTimestamp": "2025-03-14T08:20:31.907-07:00",
+    "name": "migration-scratch",
+    "sizeGb": "200",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-ssd",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/migration-scratch",
+    "status": "READY",
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000031676",
+    "creationTimestamp": "2025-11-06T10:00:00.000-08:00",
+    "name": "tmp-restore",
+    "sizeGb": "50",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-balanced",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/tmp-restore",
+    "status": "READY",
+    "lastAttachTimestamp": "2025-11-06T10:01:00.000-08:00",
+    "lastDetachTimestamp": "2025-11-07T15:30:00.000-08:00",
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000039595",
+    "creationTimestamp": "2024-01-11T09:12:44.512-08:00",
+    "name": "batch-worker-old",
+    "sizeGb": "100",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-balanced",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/batch-worker-old",
+    "status": "READY",
+    "sourceImage": "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-12",
+    "sourceImageId": "8471935610238471123",
+    "lastAttachTimestamp": "2024-02-02T07:00:00.000-08:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/batch-worker-old"
+    ],
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000047514",
+    "creationTimestamp": "2024-01-11T09:12:44.512-08:00",
+    "name": "batch-worker-old-data",
+    "sizeGb": "250",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-ssd",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/batch-worker-old-data",
+    "status": "READY",
+    "lastAttachTimestamp": "2024-02-02T07:00:20.000-08:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/batch-worker-old"
+    ],
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000055433",
+    "creationTimestamp": "2024-01-11T09:12:44.512-08:00",
+    "name": "legacy-ci",
+    "sizeGb": "30",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-standard",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/legacy-ci",
+    "status": "READY",
+    "sourceImage": "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-12",
+    "sourceImageId": "8471935610238471123",
+    "lastAttachTimestamp": "2023-08-02T12:00:00.000-07:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/legacy-ci"
+    ],
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000063352",
+    "creationTimestamp": "2024-01-11T09:12:44.512-08:00",
+    "name": "gpu-experiment",
+    "sizeGb": "200",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/diskTypes/pd-balanced",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/gpu-experiment",
+    "status": "READY",
+    "sourceImage": "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-12",
+    "sourceImageId": "8471935610238471123",
+    "lastAttachTimestamp": "2025-09-01T09:00:00.000-07:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/gpu-experiment"
+    ],
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  },
+  {
+    "kind": "compute#disk",
+    "id": "4823001100000071271",
+    "creationTimestamp": "2024-10-01T09:00:00.000-07:00",
+    "name": "ha-db-replica",
+    "sizeGb": "100",
+    "region": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1",
+    "replicaZones": [
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+      "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-b"
+    ],
+    "type": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/diskTypes/pd-ssd",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/disks/ha-db-replica",
+    "status": "READY",
+    "lastAttachTimestamp": "2024-10-01T09:05:00.000-07:00",
+    "lastDetachTimestamp": "2025-08-20T22:10:00.000-07:00",
+    "physicalBlockSizeBytes": "4096",
+    "labelFingerprint": "42WmSpB8rSM="
+  }
+]

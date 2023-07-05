@@ -1,0 +1,231 @@
+[
+  {
+    "kind": "compute#instance",
+    "id": "4823001100000166299",
+    "creationTimestamp": "2024-01-11T09:12:40.000-08:00",
+    "name": "web-1",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/machineTypes/e2-medium",
+    "status": "RUNNING",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "networkInterfaces": [
+      {
+        "kind": "compute#networkInterface",
+        "network": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/networks/default",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/subnetworks/prod-subnet",
+        "networkIP": "10.10.0.2",
+        "name": "nic0",
+        "stackType": "IPV4_ONLY",
+        "fingerprint": "lQ1x6dyXl5c=",
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "type": "ONE_TO_ONE_NAT",
+            "name": "External NAT",
+            "natIP": "203.0.113.10",
+            "networkTier": "PREMIUM"
+          }
+        ]
+      }
+    ],
+    "disks": [
+      {
+        "kind": "compute#attachedDisk",
+        "type": "PERSISTENT",
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/web-1",
+        "deviceName": "web-1",
+        "index": 0,
+        "boot": true,
+        "autoDelete": true,
+        "interface": "SCSI",
+        "diskSizeGb": "20"
+      }
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/web-1",
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "automaticRestart": true,
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "cpuPlatform": "Unknown CPU Platform",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "fingerprint": "Bkb9v0xD1Ts=",
+    "lastStartTimestamp": "2024-02-02T07:01:00.000-08:00"
+  },
+  {
+    "kind": "compute#instance",
+    "id": "4823001100000174218",
+    "creationTimestamp": "2024-01-11T09:12:40.000-08:00",
+    "name": "batch-worker-old",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/machineTypes/n2-standard-8",
+    "status": "TERMINATED",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "networkInterfaces": [
+      {
+        "kind": "compute#networkInterface",
+        "network": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/networks/default",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/subnetworks/prod-subnet",
+        "networkIP": "10.10.0.3",
+        "name": "nic0",
+        "stackType": "IPV4_ONLY",
+        "fingerprint": "lQ1x6dyXl5c=",
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "type": "ONE_TO_ONE_NAT",
+            "name": "External NAT",
+            "natIP": "203.0.113.77",
+            "networkTier": "PREMIUM"
+          }
+        ]
+      }
+    ],
+    "disks": [
+      {
+        "kind": "compute#attachedDisk",
+        "type": "PERSISTENT",
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/batch-worker-old",
+        "deviceName": "batch-worker-old",
+        "index": 0,
+        "boot": true,
+        "autoDelete": true,
+        "interface": "SCSI",
+        "diskSizeGb": "100"
+      },
+      {
+        "kind": "compute#attachedDisk",
+        "type": "PERSISTENT",
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/batch-worker-old-data",
+        "deviceName": "batch-worker-old-data",
+        "index": 1,
+        "boot": false,
+        "autoDelete": false,
+        "interface": "SCSI",
+        "diskSizeGb": "250"
+      }
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/batch-worker-old",
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "automaticRestart": true,
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "cpuPlatform": "Unknown CPU Platform",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "fingerprint": "Bkb9v0xD1Ts=",
+    "lastStartTimestamp": "2024-02-02T07:01:00.000-08:00",
+    "lastStopTimestamp": "2025-07-15T18:02:44.210-07:00"
+  },
+  {
+    "kind": "compute#instance",
+    "id": "4823001100000182137",
+    "creationTimestamp": "2024-01-11T09:12:40.000-08:00",
+    "name": "legacy-ci",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/machineTypes/e2-standard-2",
+    "status": "TERMINATED",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "networkInterfaces": [
+      {
+        "kind": "compute#networkInterface",
+        "network": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/networks/default",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/subnetworks/prod-subnet",
+        "networkIP": "10.10.0.4",
+        "name": "nic0",
+        "stackType": "IPV4_ONLY",
+        "fingerprint": "lQ1x6dyXl5c=",
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "type": "ONE_TO_ONE_NAT",
+            "name": "External NAT",
+            "networkTier": "PREMIUM"
+          }
+        ]
+      }
+    ],
+    "disks": [
+      {
+        "kind": "compute#attachedDisk",
+        "type": "PERSISTENT",
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/legacy-ci",
+        "deviceName": "legacy-ci",
+        "index": 0,
+        "boot": true,
+        "autoDelete": true,
+        "interface": "SCSI",
+        "diskSizeGb": "30"
+      }
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/legacy-ci",
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "automaticRestart": true,
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "cpuPlatform": "Unknown CPU Platform",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "fingerprint": "Bkb9v0xD1Ts=",
+    "lastStartTimestamp": "2024-02-02T07:01:00.000-08:00",
+    "lastStopTimestamp": "2025-11-06T09:00:00.000-08:00"
+  },
+  {
+    "kind": "compute#instance",
+    "id": "4823001100000190056",
+    "creationTimestamp": "2024-01-11T09:12:40.000-08:00",
+    "name": "gpu-experiment",
+    "machineType": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/machineTypes/g2-standard-8",
+    "status": "SUSPENDED",
+    "zone": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a",
+    "networkInterfaces": [
+      {
+        "kind": "compute#networkInterface",
+        "network": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/networks/default",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/subnetworks/prod-subnet",
+        "networkIP": "10.10.0.5",
+        "name": "nic0",
+        "stackType": "IPV4_ONLY",
+        "fingerprint": "lQ1x6dyXl5c=",
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "type": "ONE_TO_ONE_NAT",
+            "name": "External NAT",
+            "networkTier": "PREMIUM"
+          }
+        ]
+      }
+    ],
+    "disks": [
+      {
+        "kind": "compute#attachedDisk",
+        "type": "PERSISTENT",
+        "mode": "READ_WRITE",
+        "source": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/gpu-experiment",
+        "deviceName": "gpu-experiment",
+        "index": 0,
+        "boot": true,
+        "autoDelete": true,
+        "interface": "SCSI",
+        "diskSizeGb": "200"
+      }
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/instances/gpu-experiment",
+    "scheduling": {
+      "onHostMaintenance": "MIGRATE",
+      "automaticRestart": true,
+      "preemptible": false,
+      "provisioningModel": "STANDARD"
+    },
+    "cpuPlatform": "Unknown CPU Platform",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "fingerprint": "Bkb9v0xD1Ts=",
+    "lastStartTimestamp": "2024-02-02T07:01:00.000-08:00",
+    "lastSuspendedTimestamp": "2025-09-30T17:45:00.000-07:00"
+  }
+]

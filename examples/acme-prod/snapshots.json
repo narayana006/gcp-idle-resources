@@ -1,0 +1,78 @@
+[
+  {
+    "kind": "compute#snapshot",
+    "id": "4823001100000134623",
+    "creationTimestamp": "2024-09-01T03:00:12.004-07:00",
+    "name": "reports-pre-migration",
+    "status": "READY",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/old-reports-export",
+    "sourceDiskId": "5531872460021944011",
+    "diskSizeGb": "500",
+    "storageBytes": "183072980992",
+    "storageBytesStatus": "UP_TO_DATE",
+    "storageLocations": [
+      "us"
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/snapshots/reports-pre-migration",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "autoCreated": false,
+    "snapshotType": "STANDARD"
+  },
+  {
+    "kind": "compute#snapshot",
+    "id": "4823001100000142542",
+    "creationTimestamp": "2025-11-09T02:14:51.663-08:00",
+    "name": "web-1-us-central1-a-20251109",
+    "status": "READY",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/web-1",
+    "sourceDiskId": "5531872460021944011",
+    "diskSizeGb": "20",
+    "storageBytes": "3221225472",
+    "storageBytesStatus": "UP_TO_DATE",
+    "storageLocations": [
+      "us"
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/snapshots/web-1-us-central1-a-20251109",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "autoCreated": true,
+    "snapshotType": "STANDARD"
+  },
+  {
+    "kind": "compute#snapshot",
+    "id": "4823001100000150461",
+    "creationTimestamp": "2023-12-03T18:30:00.000-08:00",
+    "name": "ci-cache-2024",
+    "status": "READY",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/zones/us-central1-a/disks/ci-cache",
+    "sourceDiskId": "5531872460021944011",
+    "diskSizeGb": "50",
+    "storageBytes": "21474836480",
+    "storageBytesStatus": "UP_TO_DATE",
+    "storageLocations": [
+      "us"
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/snapshots/ci-cache-2024",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "autoCreated": false,
+    "snapshotType": "STANDARD"
+  },
+  {
+    "kind": "compute#snapshot",
+    "id": "4823001100000158380",
+    "creationTimestamp": "2025-04-01T00:00:00.000-07:00",
+    "name": "db-archive-q1",
+    "status": "READY",
+    "sourceDisk": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/regions/us-central1/disks/ha-db-replica",
+    "sourceDiskId": "5531872460021944011",
+    "diskSizeGb": "100",
+    "storageBytes": "96636764160",
+    "storageBytesStatus": "UP_TO_DATE",
+    "storageLocations": [
+      "us"
+    ],
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/acme-prod-1234/global/snapshots/db-archive-q1",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "autoCreated": false,
+    "snapshotType": "ARCHIVE"
+  }
+]
